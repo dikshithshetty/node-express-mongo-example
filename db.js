@@ -9,7 +9,7 @@ const init = () =>
   MongoClient.connect(connectionUrl, { useNewUrlParser: true }).then((client) => {
     db = client.db(dbName)
     useUnifiedTopology: true,
-    sslValidate:true,
+    sslValidate: true,
     sslCA: process.env.CA_CERT
 })
 
